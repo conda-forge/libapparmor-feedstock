@@ -10,7 +10,7 @@ source:
   sha256: 51b1db60e962dd01856a1ec6a9d43b11ed4350dcc5738ef901097c999bcbf50e
 
 build:
-  skip: true  # [not linux64]
+  skip: true  # [not unix]
   number: 0
   script:
     - export PYTHONPATH=$(realpath libraries/libapparmor/swig/python)
