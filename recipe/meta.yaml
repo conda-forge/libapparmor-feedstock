@@ -1,5 +1,5 @@
 {% set name = "libapparmor" %}
-{% set version = "3.0.3" %}
+{% set version = "3.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://gitlab.com/apparmor/apparmor/-/archive/v{{ version }}/apparmor-v{{ version }}.tar.gz
-  sha256: 51b1db60e962dd01856a1ec6a9d43b11ed4350dcc5738ef901097c999bcbf50e
+  sha256: 85dd3aaaf6f5358db723c24c4f74fd2b2ffe99f76f3ac6d188c4e3b048a53346
 
 build:
   skip: true  # [not linux]
-  number: 1
+  number: 0
   script:
     - export PYTHONPATH=$(realpath libraries/libapparmor/swig/python)
     - cd ./libraries/libapparmor
