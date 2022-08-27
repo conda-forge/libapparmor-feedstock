@@ -1,5 +1,5 @@
 {% set name = "libapparmor" %}
-{% set version = "3.1.0" %}
+{% set version = "3.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.com/apparmor/apparmor/-/archive/v{{ version }}/apparmor-v{{ version }}.tar.gz
-  sha256: f01939b9f4c0e45f4c51069700b9def7c81b1fad8319e0d7586248d29bc2490f
+  sha256: f2e55b1ef826422fa3a44af26305b531031cdd73ecdb9be9187ed7389a3aff91
 
 build:
   skip: true  # [not linux]
