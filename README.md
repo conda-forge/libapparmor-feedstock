@@ -1,11 +1,11 @@
-About libapparmor
-=================
+About libapparmor-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libapparmor-feedstock/blob/main/LICENSE.txt)
 
 Home: https://apparmor.net/
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libapparmor-feedstock/blob/main/LICENSE.txt)
 
 Summary: Linux kernel security module
 
