@@ -1,5 +1,5 @@
 {% set name = "libapparmor" %}
-{% set version = "3.1.7" %}
+{% set version = "4.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.com/apparmor/apparmor/-/archive/v{{ version }}/apparmor-v{{ version }}.tar.gz
-  sha256: 64494bd99fa6547a9cbdb4fc6bc732451a02dd19e6eb70eab977b239632151eb
+  sha256: 87a77896e82047a5794725c5e0c06c6dad91a9988a163f771199719c5a95ae1c
 
 build:
   skip: true  # [not linux]
@@ -28,8 +28,8 @@ requirements:
     - psutil
     - {{ compiler('fortran') }}
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
-    - sysroot_linux-64 2.17  # [linux64]
     - make
     - cmake
     - autoconf
